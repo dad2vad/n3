@@ -43,6 +43,28 @@ export default function Index() {
           font-size: 24px;
         }
       `}</style>
+        <div className="quote">{quote}</div>
+      {author && <span className="author">- {author}</span>}
+
+      <style jsx>{`
+        main {
+          width: 95%;
+          max-width: 9000px;
+          margin: 300px auto;
+          text-align: top;
+        }
+        .quote {
+          font-family: monospace;
+          color: #e243de;
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+        .author {
+          font-family: monospace;
+          color: #559834;
+          font-size: 24px;
+        }
+      `}</style>
     </main>
   );
 }
