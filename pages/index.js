@@ -33,13 +33,13 @@ export default function Index() {
           text-align: center;
         }
         .quote {
-          font-family: cursive;
+          font-family: monospace;
           color: #e243de;
           font-size: 24px;
           padding-bottom: 10px;
         }
         .author {
-          font-family: sans-serif;
+          font-family: monospace;
           color: #559834;
           font-size: 20px;
         }
