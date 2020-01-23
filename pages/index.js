@@ -28,9 +28,9 @@ export default function Index() {
       <style jsx>{`
         main {
           width: 95%;
-          max-width: 900px;
+          max-width: 700px;
           margin: 300px auto;
-          text-align: center;
+          text-align: top;
         }
         .quote {
           font-family: monospace;
