@@ -5,7 +5,6 @@ function fetcher(url) {
   return fetch(url).then(r => r.json());
 }
 //  /api/randomQuote?author=ow
-
 export default function Index() {
   const { query } = useRouter();
   const { data, error } = useSWR(
