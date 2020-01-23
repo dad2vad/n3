@@ -27,7 +27,7 @@ export default function Index() {
       <style jsx>{`
         main {
           width: 95%;
-          max-width: 700px;
+          max-width: 9000px;
           margin: 300px auto;
           text-align: top;
         }
