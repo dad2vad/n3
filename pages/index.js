@@ -27,7 +27,7 @@ export default function Index() {
 
       <style jsx>{`
         main {
-          width: 90%;
+          width: 95%;
           max-width: 900px;
           margin: 300px auto;
           text-align: center;
@@ -41,7 +41,7 @@ export default function Index() {
         .author {
           font-family: monospace;
           color: #559834;
-          font-size: 20px;
+          font-size: 24px;
         }
       `}</style>
     </main>
