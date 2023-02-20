@@ -5,17 +5,21 @@ on:
     branches:
       - main
 
-env:
-  FORCE_COLOR: 3
-  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-  TURBO_TEAM: acme
-
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+
+    environment: 
+      name: this
+      url: https://github.com/ka9an/denopendabot
+
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
     defaults:
       run:
         shell: bash
@@ -31,7 +35,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.14
+          node-version: 18
           cache: pnpm
 
       - name: Install Dependencies

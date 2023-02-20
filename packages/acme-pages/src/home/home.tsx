@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Layout, Page, Text, Code, Link, Snippet } from '@vercel/examples-ui'
-import { Button, Quote } from '@acme/design-system'
-import { matchingTextColor, randomColor } from '@acme/utils'
+import { Button, Quote } from '@o6/design-system'
+import { matchingTextColor, randomColor } from '@o6/utils'
 import Navbar from '../components/navbar'
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
         This is the current Next.js site you&apos;re looking at!
       </Text>
       <Text variant="h2" className="mt-10 mb-6">
-        packages/acme-design-system
+        packages/o6-design-system
       </Text>
       <Text className="mb-4">
         Example of how you could build a Design System, it&apos;s a set of React
@@ -48,20 +48,20 @@ export default function Home() {
         This is the <Code>Quote</Code> component in the design system.
       </Quote>
       <Text variant="h2" className="mt-10 mb-6">
-        packages/acme-pages
+        packages/o6-pages
       </Text>
       <Text className="mb-4">
-        Works in the same way as <Code>packages/acme-design-system</Code> but
+        Works in the same way as <Code>packages/o6-design-system</Code> but
         instead of building a design system it&apos;s about having shared
         components that represent pages.
       </Text>
       <Text className="mb-4">
         You&apos;re currently looking at the Home page, defined in{' '}
-        <Code>packages/acme-pages/src/home</Code> and imported by{' '}
+        <Code>packages/o6-pages/src/home</Code> and imported by{' '}
         <Code>apps/main/pages/index.tsx</Code>.
       </Text>
       <Text variant="h2" className="mt-10 mb-6">
-        packages/acme-utils
+        packages/o6-utils
       </Text>
       <Text className="mb-4">This package exports utility functions.</Text>
       <Text className="mb-4">
@@ -106,18 +106,18 @@ export default function Home() {
         in port 3000, and <Code>apps/docs</Code> in 3001).
       </Text>
       <Text variant="h2" className="mt-10 my-6">
-        packages/acme-storybook
+        packages/o6-storybook
       </Text>
       <Text className="mb-4">
         This packages takes the stories in{' '}
-        <Code>packages/acme-design-system</Code> and opens them in{' '}
+        <Code>packages/o6-design-system</Code> and opens them in{' '}
         <Link href="https://storybook.js.org/" target="_blank">
           Storybook
         </Link>
         .
       </Text>
       <Text variant="h2" className="mt-10 my-6">
-        packages/eslint-config-acme
+        packages/eslint-config-o6
       </Text>
       <Text className="mb-4">
         Exports the Eslint configuration that will be used by all apps and
@@ -134,7 +134,7 @@ export default function Home() {
       </Text>
       <Snippet className="mb-4">{`module.exports = {
   root: true,
-  extends: ['acme'],
+  extends: ['o6'],
 }`}</Snippet>
     </Page>
   )
