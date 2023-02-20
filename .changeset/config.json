@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["docs", "main", "@o6/storybook"]
+  "ignore": ["docs", "main"]
 }
